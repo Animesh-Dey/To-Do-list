@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+body{
+    /*background: linear-gradient(120deg,#f6d365,#fda085);*/
+    background-image: url('pexels-emiliano-arano-3608311.jpg');
+    background-position: relative;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color:whitesmoke;
+    min-height: 100vh;
+}
+header{
+     font-size: 40px;
+     color: #408FD8;
+     font-family: 'Roboto', sans-serif;
+}
+
+header,form{
+    min-height: 20vh;
+  
+    display: flex;
+    align-items: center;/**/
+    justify-content: center;/**/
+    
+}
+form input,form button{
+   padding: 10px;
+   opacity: 0.9;
+   border: none;
+   font-size: 32px;
+}
+
+form button{
+          color: #2787c7;
+          background: white;
+          cursor: pointer;
+          transition:all 0.3s ease; 
+}
+form button:hover{
+    background: #2787c7;
+    color: white;
+}
+
+.todo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.todo-list{
+    min-width: 30%;
+    list-style: none;
+}
+/*which div created in js file .... this style given below*/
+.todo{
+    margin: 24px;
+    background: white;
+    color: black;
+    font-size:24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition:all 0.5s ease-in;
+}
+.todo li{
+    flex: 1;
+}
+
+.trash-button,.completed-button{
+    background:#00b2f8b6;
+    color:white;
+    border: none;
+    padding: 16px;
+    cursor: pointer;
+    font-size:16px ;
+}
+
+.completed-button{
+    background:rgb(62, 108, 192);
+}
+
+ .todo-item{
+     padding:8px ;
+ }
+
+ .fa-trash,.fa-check{
+     pointer-events: none;
+ }
+
+ .completed{
+     text-decoration: line-through;
+     opacity: 0.5;
+ }
+/*Animation for delete*/
+.fall{
+    opacity: 0.4;
+  
+}
+.hide{
+    margin-left: 50%;
+}
+label{
+    font-size: 20px;
+}
